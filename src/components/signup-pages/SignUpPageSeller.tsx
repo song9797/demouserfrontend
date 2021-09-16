@@ -18,7 +18,7 @@ import axios from 'axios';
 
 
 export default function SignUpPageSeller(){
-  const server = `http://localhost:3001/seller/Create`;
+  const server = `http://a63fd6c4128c045708aab71bd19256da-967814825.us-east-2.elb.amazonaws.com:8080/seller/Create`;
     const classes = useStyles();
     const history = useHistory();
     const [confirmPassword, setconfirmPassword]= useState("");

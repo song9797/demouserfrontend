@@ -19,7 +19,7 @@ import { url } from 'inspector';
 
 
 export default function SignUpPageBuyer(){
-  const server = `http://localhost:8080/buyer/Create`;
+  const server = `http://a63fd6c4128c045708aab71bd19256da-967814825.us-east-2.elb.amazonaws.com:8080/buyer/Create`;
     const classes = useStyles();
     const history = useHistory();
     const [userid, setId]= useState("");

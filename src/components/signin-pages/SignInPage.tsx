@@ -9,7 +9,7 @@ import { useStyles } from "./styles/style";
 
 export default function SignInPage() {
     // const [server,setServer] = useState(`http://localhost:3001`);
-    var server = 'http://localhost:3001'
+    var server = 'http://a63fd6c4128c045708aab71bd19256da-967814825.us-east-2.elb.amazonaws.com:8080/'
     const history = useHistory();
     const classes = useStyles();
     const [inputId,setInputId] = useState("");
@@ -45,10 +45,10 @@ export default function SignInPage() {
       console.log(usertype)
       if(usertype === 'seller'){
         // setServer(`http://localhost:8080/auth/seller`)
-        server = 'http://localhost:8080/auth/seller'
+        server = 'http://a63fd6c4128c045708aab71bd19256da-967814825.us-east-2.elb.amazonaws.com:8080/auth/seller'
       }else if(usertype === 'buyer'){
         // setServer(`http://localhost:8080/auth/buyer`)
-        server = 'http://localhost:8080/auth/buyer'
+        server = 'http://a63fd6c4128c045708aab71bd19256da-967814825.us-east-2.elb.amazonaws.com:8080/auth/buyer'
       }
       axios({
         method: 'post',
